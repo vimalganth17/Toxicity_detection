@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Toxicity Classifier</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="app-container">
+        <h1>Comment Toxicity Classifier</h1>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+            <h2>Enter a Comment:</h2>
+            <textarea id="text" placeholder="Enter a comment here..."></textarea>
+            <button id="classify">Classify Comment</button>
+        </div>
+
+        <div id="output"></div>
+        <div id="transformation"></div>
+
+        <!-- YouTube Video URL Section -->
+        <div class="youtube-section">
+            <h2>Enter YouTube Video URL:</h2>
+            <input type="text" id="youtube-url" placeholder="Paste YouTube video URL here" />
+            <button id="fetch-comments">Fetch Toxic Comments</button>
+        </div>
+
+        <div id="toxic-comments"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
