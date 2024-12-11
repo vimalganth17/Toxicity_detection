@@ -1,6 +1,5 @@
-const perspectiveApiKey = "AIzaSyBVn5rsPqKyZ5wXq-vRlSKLj3dhqEX-ES0"; // Perspective API Key
-const youtubeApiKey = "AIzaSyA-sAkQt0lopfTSs9DrdbNdM55qDoNqclk"; // YouTube API Key
-
+const perspectiveApiKey = ENV.perspectiveApiKey; // Perspective API Key
+const youtubeApiKey = ENV.youtubeApiKey; 
 const url = `https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=${perspectiveApiKey}`;
 const youtubeApiUrl = `https://www.googleapis.com/youtube/v3/commentThreads?key=${youtubeApiKey}&textFormat=plainText&part=snippet,replies`;
 
